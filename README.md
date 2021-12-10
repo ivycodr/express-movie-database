@@ -21,4 +21,19 @@ The Jira Kanban template was used to show the number of steps to achieve the goa
 </h3>
 
 
+<h5>Tools</h5>
+<ul>
+    <li>Visual Studio Code</li>
+    <li>Postman</li>
+<ul>
+<h5>Tech Stack</h5>
+<ul>
+    <li>Node JS</li>
+    <li>NPM node manager</li>
+    <li>Sqlite3 - underlying relational DB</li>
+    <li>ORM - Sequelize</li>
+    <li>Express - render dynamic data</li>
+    <li>TDD using JEST</li>
+</ul>
 
+<h5>How to Run</h5>

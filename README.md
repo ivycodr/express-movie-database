@@ -1,6 +1,6 @@
 # express-movie-database
 
-<h1>Project Objective<h1>
+<h1>Project Objective</h1>
 The goal of the project was to create 3 tables
    a) Movie
    b) Crew

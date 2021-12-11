@@ -21,7 +21,7 @@ Features
     
     <li>Visual Studio Code</li>
     <li>Postman</li>
-<ul>
+</ul>
 
 <ul>
     <li>Node JS</li>

@@ -18,9 +18,8 @@ Features
 <h1>Technologies Used</h1>
 <h5>Tools</h5>
 <ul>
-    
-    <li>Visual Studio Code</li>
-    <li>Postman</li>
+    Visual Studio Code
+    Postman
 </ul>
 
 <ul>

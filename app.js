@@ -1,13 +1,15 @@
-// configures express, requires router
-const router = require('./router.js');
-const express = require('express');
+const express = require('express')
 const app = express();
-const port = 3000;
-app.use('/', router);
+
+// get a handle for all your routes
 app.use(express.json());
+const routes = require('./routes')
+
+// Import my routes into the path '/'
+app.use('/', routes);
 
 
-module.exports = {
-    port, app
 
-}
+module.exports = app;
+
+

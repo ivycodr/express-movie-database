@@ -1,6 +1,6 @@
 
-const {Movie, Crew, Cast} = require('./index')
-const {sequelizedb } = require('./db.js');
+const {Movie, Crew, Cast} = require('../index')
+const {sequelizedb } = require('../db.js');
 
 describe('Movie test cases', () => {
     /**

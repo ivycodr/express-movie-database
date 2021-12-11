@@ -7,123 +7,37 @@ const {sequelizedb } = require('./db.js');
 // create the restaurant objects and place it in the array
 // make sure it match the model, since you will be inserting it
 
-const movieArray = [
-    {
-        name: "Panera Bread",
-        address: "1219 Colleyville Blvd, Colleyville, TX, 76039"
-    },
-    {
-        name: "Panda Express",
-        address: "1217 Dallas Blvd, Dallas, TX, 76065"
-    },
-    
-    {
-        name: "Nanglo Indian Restaurant",
-        address: "1220 Euless Blvd, Euless, TX, 76021"
-    },
 
-    {
-        name: "Wild Wings",
-        address: "1232 Southlake, Southlake, TX, 76092"
-    },
 
-    {
-        name: "Chart House",
-        address: "1000 PCH, Santa Monica, CA, 76039"
-    }
-
+const movies = [
+    { name: 'Transporter 2', releaseDate: '2005-05-01', rating: 'PG-13' },
+    { name: 'Rush Hour 2', releaseDate: '2001-05-01', rating: 'PG-13' },
+    { name: 'Oceans 12', releaseDate: '2004-05-01', rating: 'PG-13' }
 
 
 ]
 
 
-const menuArray = [
-  {
-      name: "Lunch",
-      restaurant_id : 1
-     
- 
-  },
-  {
-      name: "Dinner",
-      restaurant_id : 1
-     
-    
-  },
-  
-  {
-      name: "Buffet",
-      restaurant_id : 1
-     
-     
-  },
-  
-  {
-    name: "Lunch",
-    restaurant_id : 2
-   
-   
-  },
-  {
-    name: "Lunch",
-    restaurant_id : 5
-   
-   
-  }
-
-  
-
-
-
-
+const casts = [
+    {name: 'Jason Statham', movie_id: 1},
+    {name: 'Amber Valletta', movie_id: 1},
+    {name: 'Jason Flemyng', movie_id: 1},
+    {name: 'Jackie Chan', movie_id: 2},
+    {name: 'Chris Tucker', movie_id: 2},
+    {name: 'Alan King', movie_id: 2},
+    {name: 'George Clooney', movie_id: 3},
+    {name: 'Brad Pitt', movie_id: 3},
+    {name: 'Matt Damon', movie_id: 3}
 ]
 
 
-const menuItemArray = [
-  {
-      name: "Whopper",
-      price: 3.12,
-      menu_id : 1
- 
-  },
-  {
-    name: "Fries",
-    price: 3.12,
-    menu_id : 2
-    
-  },
-  
-  {
-    name: "Nuggets",
-    price: 3.12,
-    menu_id : 3
-     
-  },
+const crews = [
+  {name: 'Luc Besson', role: 'Producer', movie_id: 1},
+  {name: 'Steven Chasman', role: 'Producer', movie_id: 1},
+  {name: 'Terry Miller', role: 'Executive Producer', movie_id: 2},
+  {name: 'Brett Ratner', role: 'Director', movie_id: 2},
+  {name: 'Steven Soderbergh', role: 'Director', movie_id: 3}
 
-  {
-    name: "Shake",
-    price: 3.12,
-    menu_id : 1
-     
-  },
-  {
-    name: "Cheeese Burger",
-    price: 3.12,
-    menu_id : 3
-     
-  },
-  {
-    name: "Chicken Spicy Burger",
-    price: 3.12,
-    menu_id : 2
-     
-  },
-  {
-    name: "Double Whopper",
-    price: 3.12,
-    menu_id : 3
-     
-  }
 
 
 ]
@@ -133,9 +47,9 @@ const seed = async () => {
     try {
       console.log('Seeding Start')
       await sequelizedb.sync({force: true})
-      await Restaurant.bulkCreate(restaurantArray, {validate: true})
-      await Menu.bulkCreate(menuArray, {validate: true})
-      await MenuItem.bulkCreate(menuItemArray, {validate: true})
+      await Movie.bulkCreate(movies, {validate: true})
+      await Cast.bulkCreate(casts, {validate: true})
+      await Crew.bulkCreate(crews, {validate: true})
      
     } catch (error) {
       console.log('SOMETHING WENT WRONG WITH THE SEEDING: ', error)

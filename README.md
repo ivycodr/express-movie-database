@@ -106,13 +106,3 @@ Fork and clone this repository then run npm install to add the relevant dependen
 <h1>Contribution Guidelines</h1>
 To make suggestions, create a new issue on this repo.
 
-
-
-
-
-
-
-<h5>Tools</h5>
-
-
-<h5>How to Run</h5>

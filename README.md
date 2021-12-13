@@ -94,9 +94,10 @@ The Jira Kanban template was used to show the number of steps to achieve the goa
 
 <h1>Stretch Goals</h1>
 <ul>
-    <li>Splitting the routes, app and server - done<li>
-    <li>testing express routes - routes were refactored to use handlers, please see routes.js, test cases pending<li>
-    <li>installed express-validation, test cases are pending<li>
+    <li>Splitting the routes, app and server - done</li>
+    <li>testing express routes - routes were refactored to use handlers, please see routes.js, test cases pending
+    </li>
+    <li>installed express-validation, test cases are pending</li>
 </ul>
 
 <h1>Getting Started</h1>

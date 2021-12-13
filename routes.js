@@ -166,7 +166,7 @@ router.get('/movie-name/:name', movieByName);
 // post
 router.post('/movie', jsonParser, addMovieHandler);
 router.post('/cast',jsonParser, addCastHandler)
-router.post('/cast',jsonParser, addCrewHandler)
+router.post('/crew',jsonParser, addCrewHandler)
 
 // update
 router.put('/movie/:id',jsonParser, updateMovieHandler)

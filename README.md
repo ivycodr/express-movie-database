@@ -17,29 +17,44 @@ base url : http://localhost:3000/
 
 http protocols using get, put, delete and post
 ----------------------------------------------
-get('/movies')
-get('/casts')
-get('/crews')
-get('/movie/:id')
-get('/crew/:id')
-get('/cast/:id')
-get('/movie-name/:name')
 
-// post
-post('/movie') --> supply a JSON body
-post('/cast') --> supply a JSON body
-post('/cast') --> supply a JSON body
+HTTP GET
 
-// update
-put('/movie/:id') --> supply a JSON body
-put('/crew/:id') --> supply a JSON body
-put('/movie/:id') --> supply a JSON body
+<ul>
+    <li>get('/movies')</li>
+    <li>get('/casts')</li>
+    <li>get('/crews')</li>
+    <li>get('/movie/:id')</li>
+    <li>get('/crew/:id')</li>
+    <li>get('/cast/:id')</li>
+    <li>get('/movie-name/:name')</li>
+</ul>
 
-// delete
-delete('/movie/:id')
-delete('/crew/:id')
-delete('/cast/:id')
+HTTP POST
+<ul>
+    <li> post('/movie') --> supply a JSON body</li>
+    <li>post('/cast') --> supply a JSON body</li>
+    <li>post('/crew') --> supply a JSON body<li>
 
+</ul>
+
+HTTP PUT
+<ul>
+    <li>put('/movie/:id') --> supply a JSON body</li>
+    <li>put('/crew/:id') --> supply a JSON body</li>
+    <li>put('/movie/:id') --> supply a JSON body<li>
+
+</ul>
+
+HTTP DELETE
+
+
+<ul>
+    <li>delete('/movie/:id')</li>
+    <li>delete('/crew/:id')</li>
+    <li>delete('/cast/:id')<li>
+
+</ul>
 
 
 <h1>Technologies Used</h1>

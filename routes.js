@@ -178,28 +178,5 @@ router.delete('/movie/:id',deleteMovieHandler)
 router.delete('/crew/:id',deleteCrewHandler)
 router.delete('/cast/:id',deleteCastHandler)
 
-//with validator
-/*
-router.post(
-  '/movievalidator',
-  body('name').isLength({ min: 5 }),
-  jsonParser,
-  async(req, res) => {
-    // Finds the validation errors in this request and wraps them in an object with handy functions
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
-    }
-
-    let newMovie = await Movie.create(request.body)
-    response.send("Movie Created")
-
-  })
-*/
-
-
-
-
-
 
 module.exports = router;

@@ -67,6 +67,9 @@ describe('Movie test cases', () => {
         expect(crews[0].name).toBe('Luc Besson');
     })
 
+
+    
+
     afterAll(async () => {
         // the 'sync' method will drop tables based on the model class
         // by setting 'force:true' the tables are dropped each time the 

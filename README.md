@@ -10,10 +10,37 @@ The goal of the project was to create 3 tables
 
 Using relational database, link 3 tables (primary and foreign keys)
 
-... (screenshot off postman or browser accessing API)
+Following APIs are available once the seed file is ran:
 
-Features
-...
+base url : http://localhost:3000/
+
+
+http protocols using get, put, delete and post
+----------------------------------------------
+get('/movies')
+get('/casts')
+get('/crews')
+get('/movie/:id')
+get('/crew/:id')
+get('/cast/:id')
+get('/movie-name/:name')
+
+// post
+post('/movie') --> supply a JSON body
+post('/cast') --> supply a JSON body
+post('/cast') --> supply a JSON body
+
+// update
+put('/movie/:id') --> supply a JSON body
+put('/crew/:id') --> supply a JSON body
+put('/movie/:id') --> supply a JSON body
+
+// delete
+delete('/movie/:id')
+delete('/crew/:id')
+delete('/cast/:id')
+
+
 
 <h1>Technologies Used</h1>
 <h5>Tools</h5>
@@ -46,7 +73,10 @@ The Jira Kanban template was used to show the number of steps to achieve the goa
 </h3>
 
 <h1>Testing</h1>
-... (Screenshot of test report)
+<h3>
+    <img src="https://github.com/ivycodr/express-movie-database/blob/main/resources/test_report_12122021.png">
+</h3>
+
 
 <h1>Getting Started</h1>
 Fork and clone this repository then run npm install to add the relevant dependencies. Run npm run test to seed the database and confirm tests pass. Finally, run server.js to run the express server and interact with the Routes using Postman.

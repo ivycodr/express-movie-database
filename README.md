@@ -92,6 +92,12 @@ The Jira Kanban template was used to show the number of steps to achieve the goa
     <img src="https://github.com/ivycodr/express-movie-database/blob/main/resources/test_report_12122021.png">
 </h3>
 
+<h1>Stretch Goals</h1>
+<ul>
+    <li>Splitting the routes, app and server - done<li>
+    <li>testing express routes - routes were refactored to use handlers, please see routes.js, test cases pending<li>
+    <li>installed express-validation, test cases are pending<li>
+</ul>
 
 <h1>Getting Started</h1>
 Fork and clone this repository then run npm install to add the relevant dependencies. Run npm run test to seed the database and confirm tests pass. Finally, run server.js to run the express server and interact with the Routes using Postman.
